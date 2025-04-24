@@ -1,0 +1,25 @@
+[versions]
+java = "21"
+kotlin = "2.1.20"
+ktlint = "12.2.0"
+blossom = "2.1.0"
+minecraft = "1.21.1"
+minecraftRange = "[1.21.1,1.21.2)"
+parchment = "2024.11.17"
+neoforge = "21.1.159"
+neoforgeRange = "[21.1,21.2)"
+modDevGradle = "2.0.80"
+kotlinforforge = "5.7.0"
+kotlinforforgeRange = "[5.7,)"
+gradleIdeaExt = "1.1.10"
+
+[libraries]
+minecraft = { group = "net.minecraft", name = "minecraft", version.ref = "minecraft" }
+kotlinforforge = { group = "thedarkcolour", name = "kotlinforforge-neoforge", version.ref = "kotlinforforge" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
+modDevGradle = { id = "net.neoforged.moddev", version.ref = "modDevGradle" }
+gradleIdeaExt = { id = "org.jetbrains.gradle.plugin.idea-ext", version.ref = "gradleIdeaExt" }

@@ -1,0 +1,31 @@
+modLoader = "kotlinforforge"
+loaderVersion = "{{ loaderVersionRange }}"
+license = "{{ modLicense }}"
+issueTrackerURL = "https://github.com/dragonmaus/{{ modId }}"
+
+[[mods]]
+modId = "{{ modId }}"
+version = "{{ modVersion }}"
+displayName = "{{ modName }}"
+# A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
+#updateJSONURL = "https://change.me.example.invalid/updates.json"
+displayURL = "http://git.dragonma.us/minecraft/mods/{{ modId }}/"
+logoFile = "assets/{{ modId }}/logo.png"
+authors = "{{ modAuthors }}"
+description = "{{ modDescription }}"
+
+[dependencies]
+
+[[dependencies.{{ modId }}]]
+modId = "neoforge"
+type = "required"
+versionRange = "{{ neoforgeVersionRange }}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.{{ modId }}]]
+modId = "minecraft"
+type = "required"
+versionRange = "{{ minecraftVersionRange }}"
+ordering = "NONE"
+side = "BOTH"
